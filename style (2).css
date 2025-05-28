@@ -1,0 +1,703 @@
+body {margin: 0;
+    padding: 0;
+    
+}
+
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.rez img{border-radius: 50%;
+width: 400px;
+height: 400px;
+margin-left: 20%;
+margin-top: 5%;
+border: 5px solid rgb(144, 212, 98);
+padding: 10px;
+  animation: zoomIn 1.3s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.rez{float: left;
+width: 50%;}
+.bigimage {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      height: 100vh;
+    }
+
+    .hero {
+      animation: fadeInUp 1.5s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+      margin-top: 10%;
+    }
+
+    .hero h1 {
+      font-size: 4.2rem;
+      margin-bottom: 15px;
+      color: #00f2fe;
+      
+    }
+.hero .highlight1{color: #ffea00;
+font-size: 30px;}
+    .hero p {
+      font-size: 1.8rem;
+      margin: 8px 0;
+      color: #e0e0e0;
+      font-size: 30px;
+    }
+        .hero .name {
+      color: #ffea00;
+      font-weight: 700;
+      font-size: 2.6rem; /* Smaller name */
+    }
+    .hero .iam{font-size: 2.6rem;}
+    .highlight {
+      color: #ffea00;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+
+.middle{margin: 0;
+padding: 0;
+width: 100%;}
+
+
+.sum{width: 100%;
+margin-left: 90px;
+margin-top: 60px;
+}
+.sum h2{font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.sum p{font-size: 16px;
+width: 145%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1.6;}
+
+.text-2{width: 30%;
+float: left;
+color: aliceblue;
+}
+.tech{width: 100%;
+    margin-left: 90px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.tech h2{font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.tech p{font-size: 16px;
+width: 100%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 300px;
+}
+.highlight1, .highlight2, .highlight3, .highlight4, .highlight5, .highlight6 {
+  font-weight: bold;
+}
+
+
+.project .highlight1 .highlight2 .highlight3 .highlight4 {
+  font-weight: bold;
+}
+
+.project{width: 30%;
+float: left;
+margin-left: 35%;
+}
+.project p{font-size: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1.5;
+}
+
+
+.highlight-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  margin-top: 10%;
+}
+
+.wavy-circle {
+  position: absolute;
+  top: -180px;
+  left: -150px;
+  width: 900px; /* আগের চেয়ে একটু বড় */
+  height: 953px;
+  z-index: -1;
+  opacity: 0.90;
+   animation: pulse 4s ease-in-out infinite;
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+.highlight-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project {
+  background-color: orange;
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+  float: left;
+  margin-top: 30px;
+  animation: slideUpFade 1.2s ease-in-out;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project p {
+  font-size: 15px;
+  color: white;
+}
+
+.project h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.job-area{padding: 0;
+margin: 0;
+}
+.pic{
+width: 38%;
+float: left;
+margin-left: 30px;}
+.pic img{height: 30%;
+width: 80%;
+margin-top: 150px;
+margin-left: 140px;
+display: inline-block;
+  padding: 15px; /* ছবির চারপাশে জায়গা */
+  border: 5px dotted rgb(124, 87, 192); /* ডট-ডট বর্ডার */
+  border-radius: 110px; /* কোণ গোল করতে চাইলে */
+}
+
+
+.pic img{
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pic img :hovered {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.experience h2{font-size: 20px;
+margin-left: 10px;
+margin-top: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.experience p{font-size: 15px;
+width: 100%;
+margin-left: 10px;
+margin-top: 20px;
+font-size: 18px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1.7;
+}
+
+.experience{float: left;
+width: 100%;
+
+}
+.wavy-box {
+  width: 500px;
+  height: 250px;
+  padding: 3px 20px; /* padding কমিয়ে height কমানো হলো */
+  background: #4fc3f7;
+  color: white;
+  margin-left: 55%;
+  
+  /* ঢেউ কমাতে border-radius adjust */
+  border-radius: 60% 40% 60% 40% / 10% 20% 10% 20%;
+
+  transition: all 0.4s ease;
+}
+
+.wavy-box:hover {
+  transform: rotate(3deg) scale(1.05);
+  background: #0288d1;
+}
+
+
+.source{width: 20%;
+float: left;
+margin-top: 15%;
+margin-right: 5%;
+}
+.source p{font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1.6;
+width: 90%;
+}
+.curved-arrow{float: left;
+  height: 100px;
+margin-top: 43%;
+margin-left: 6%;}
+
+.curved-arrow path {
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 0;
+  animation: dashmove 2s linear infinite;
+  stroke: #df27b7;
+}
+
+@keyframes dashmove {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+
+
+
+
+.source h2{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-left: 5px;
+}
+.source .highlight1{font-weight: bold;}
+.source .highlight2{font-weight: bold;}
+.source .highlight3{font-weight: bold;}
+.round {
+  width: 450px;
+  max-width: 600px;
+  background-color: #98bbe2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 300px;
+  padding: 30px;
+ border-radius: 80px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+* Smooth fade in + upward motion without jumping */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.exp {
+  width: 100%;
+  padding: 20px;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+ margin-top: 30px;
+}
+
+
+.exp sbr h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.exp h3 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #333;
+}
+
+.exp ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.exp li {
+  margin-bottom: 10px;
+}
+
+.sbr .back ul{margin-left: 120px;
+font-size: 18px;
+width: 100%;
+}
+.sbr .back img{width: 90px;
+border-radius: 50%;
+height: 90px;
+float: left;
+margin-top: 25px;
+
+}
+.sbr .back{float: left;
+  width: 40%;
+}
+.sbr .back h2{margin-left: 130px;}
+.sbr .back h3{width: 120%;
+margin-left: 130px;}
+.sbr .full ul{margin-left: 120px;
+font-size: 18px;
+}
+.sbr .full img{width: 90px;
+border-radius: 50%;
+height: 90px;
+float: left;
+margin-top: 25px;
+
+}
+.sbr .full{float: left;
+}
+.sbr .full h3{margin-left: 100px;
+margin-left: 120px;}
+
+.sbr .front ul{margin-left: 120px;
+font-size: 18px;
+width: 100%;
+}
+.sbr .front img{width: 90px;
+border-radius: 50%;
+height: 90px;
+float: left;
+margin-top: 25px;
+
+}
+.sbr .front{float: left;
+}
+.sbr .front h3{margin-left: 100px;
+margin-left: 120px;}
+
+
+
+.sbr .lead ul{margin-left: 120px;
+font-size: 18px;
+width: 100%;
+}
+.sbr .lead img{width: 90px;
+border-radius: 50%;
+height: 90px;
+float: left;
+margin-top: 25px;
+
+}
+.sbr .lead{float: left;
+}
+.sbr .lead h3{margin-left: 100px;
+margin-left: 120px;}
+
+.exp {
+  width: 100%;
+  max-width: 100%; /* এটা নিশ্চিত করবে যেন আর কোনো সীমা না থাকে */
+
+}
+.sbr .same{float: left;
+width: 40%;
+margin-left: 180px;
+margin-top: 25px;}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate each section */
+.sbr .back,
+.sbr .full,
+.sbr .front,
+.sbr .lead {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Optional: stagger delay for each block */
+.sbr .back {
+  animation-delay: 0.3s;
+}
+
+.sbr .full {
+  animation-delay: 0.6s;
+}
+
+.sbr .front {
+  animation-delay: 0.9s;
+}
+
+.sbr .lead {
+  animation-delay: 1.2s;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 20px;
+  gap: 15px; /* আইটেম গুলোর মাঝখানে সামান্য দূরত্ব */
+
+  justify-content: flex-end; /* This pushes items to the right */
+  margin: 0;
+  animation: slideDown 1s ease-out;
+
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Tahoma, sans-serif;
+  padding: 5px 8px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #000000;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+    .wave-section {
+      position: relative;
+      background: #00bcd4;
+      color: white;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    .wave-section h1 {
+      font-size: 48px;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .wave-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .wave-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      z-index: 0;
+      animation: animateWave 6s linear infinite;
+    }
+
+    @keyframes animateWave {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .wave-top svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .wave-section img{width: 300px;
+    border-radius: 400px;
+  height: 300px;}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  float: left;
+  width: 50%;
+}
+
+.Contact input[type="text"],
+.Contact input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-left: 20%;
+}
+
+.Contact input[type="submit"] {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 50%;
+}
+
+.Contact textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical; /* চাইলে user বড় করতে পারবে */
+  box-sizing: border-box;
+  margin-left: 20%;
+}
+
+.Contact{margin-top: 7%;}
+.head {
+  text-align: center;
+  margin-top: 5px;
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+}
+
+.head img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 150px;
+  object-fit: cover;
+  border: 1px solid #9b6d6d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+}
+
+.head h1 {
+  margin-top: 0px;
+  font-size: 40px;
+  color: #333;
+}
+
+.address {
+  text-align: left;
+  margin-top: 45px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: #444;
+  float: left;
+  width: 30%;
+}
+.add h3{font-size: 18px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.add{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 40%;
+float: left;
+margin-top: 7%;
+margin-left: 10%;
+}
+.addr p{font-size: 14px;
+width: 100%;}
+
+.num h3{font-size: 18px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 0;}
+.num p{font-size: 14px;}
+.num{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 30%;
+float: left;
+margin-top: 10%;
+margin-left: 15%;
+}
+.mob{margin-top: 50px;}
+
+.tel{margin-top: 70px;}
+
+.em{margin-top: 5px;}
+
+.visit input{width: 15%;
+padding: 10px 0;
+background: linear-gradient(rgb(83, 83, 153),rgb(99, 157, 243));
+color: #00f2fe;
+font-size: 16px;
+font-weight: bold;
+border-radius: 10px;
+cursor: pointer;
+margin-left: 30px;
+margin-top: 30px;
+}
+.visit input:hover{background: linear-gradient(rgb(99, 157, 243),rgb(83, 83, 153));}
